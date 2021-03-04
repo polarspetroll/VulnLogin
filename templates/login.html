@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<link rel="stylesheet" href="/statics/style.css">
+			<meta charset="utf-8">
+				<title>Login</title>
+			</head>
+			<body>
+        <p align="center" style="color:green;">{{.}}</p>
+				<form action="/login" method="POST">
+					<h1>Vuln Login</h1>
+					<div class="inset">
+						<p>
+							<label for="username">USERNAME</label>
+							<input type="text" name="username">
+							</p>
+							<p>
+								<label for="password">PASSWORD</label>
+								<input type="password" name="password">
+								</p>
+								</div>
+								<p class="p-container">
+									<input type="submit" name="go" id="go" value="Log in">
+									</p>
+								</form>
+							</body>
+						</html>
