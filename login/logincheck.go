@@ -38,6 +38,8 @@ func LoginCheck(w http.ResponseWriter, r *http.Request) {
     if q.Next() == true {
       stat := fmt.Sprintf("success! you logged in as %v", username)
       Temp.ExecuteTemplate(w, "done.html", stat)
+    }else {
+      Temp.ExecuteTemplate(w, "fail.html", "Login Failed")
     }
   }
 }
