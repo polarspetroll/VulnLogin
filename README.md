@@ -23,3 +23,6 @@ go run main.go
 ```
 
 - before you run the program make sure to put your database password at the beginning of the main.go
+
+
+- **Server Address : 127.0.0.1:8080**
