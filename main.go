@@ -1,11 +1,14 @@
 package main
-import(
-	"./login"
-	"net/http"
-	"html/template"
+
+import (
 	"fmt"
+	"html/template"
+	"login"
+	"net/http"
+	"os"
 )
-const DBpassword = "" // database password for root user
+
+var DBpassword = os.Getenv("DBPWD")
 
 func main() {
 	login.DBcreds = fmt.Sprintf("root:%v@tcp(127.0.0.1:3306)/vulnlogin", DBpassword)
